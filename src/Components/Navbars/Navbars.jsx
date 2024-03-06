@@ -1,6 +1,11 @@
+import { useState } from "react";
+import { HiMenuAlt1 } from "react-icons/hi";
+import { RiCloseFill } from "react-icons/ri";
 import Navbar from "../NavBar/Navbar";
 
 const Navbars = () => {
+
+    const [open, setOpen] = useState(false);
     const routes = [
     
         { "id": 1, "path": "/", "name": "Home" },
@@ -16,6 +21,16 @@ const Navbars = () => {
 
         <div>
             <ul className=" md:flex">
+                <div onClick={() => setOpen(!open)}>
+                    {
+                        open === true ?
+                            <HiMenuAlt1 className="text-2xl md:hidden" ></HiMenuAlt1>
+                            : <RiCloseFill className="text-3xl md:hidden"></RiCloseFill>
+                    }
+                    
+                   
+               </div>
+            
             {
                     routes.map(item =>
                     <Navbar key={item.id} routes={item}></Navbar>
