@@ -3,6 +3,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
 import Navbar from "../NavBar/Navbar";
 
+
 const Navbars = () => {
 
     const [open, setOpen] = useState(false);
@@ -39,8 +40,11 @@ const Navbars = () => {
                     routes.map(item =>
                     <Navbar key={item.id} routes={item}></Navbar>
                     
-                )
-            }
+                        )
+                        
+
+                    }
+                    
                 </div>
                 
             </ul>

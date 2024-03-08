@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+
 const Navbar = ({ routes }) => {
     return (
         
@@ -9,7 +10,8 @@ const Navbar = ({ routes }) => {
             <li className='hover:bg-slate-100'  >
                 <a  href={routes.path}> {routes.name} </a>
 
-                    </li>
+            </li>
+            
             
         </div>
     );
