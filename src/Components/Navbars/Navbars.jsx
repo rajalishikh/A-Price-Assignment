@@ -20,7 +20,7 @@ const Navbars = () => {
        
 
         <div>
-            <ul className=" md:flex">
+            <ul className=" md:flex ">
                 <div onClick={() => setOpen(!open)}>
                     {
                         open === true ?
@@ -31,12 +31,18 @@ const Navbars = () => {
                    
                </div>
             
-            {
+                <div className={`absolute  md:flex gap-4
+                md:static
+                duration-1000
+                 ${open ? 'top-8' : '-top-60'}`}>
+                {
                     routes.map(item =>
                     <Navbar key={item.id} routes={item}></Navbar>
                     
                 )
             }
+                </div>
+                
             </ul>
 
         </div>

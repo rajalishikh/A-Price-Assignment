@@ -6,8 +6,8 @@ const Navbar = ({ routes }) => {
         <div>
            
 
-            <li className="mr-5" >
-                <a href={routes.path}> {routes.name} </a>
+            <li className='hover:bg-slate-100'  >
+                <a  href={routes.path}> {routes.name} </a>
 
                     </li>
             
