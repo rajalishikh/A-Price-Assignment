@@ -82,7 +82,8 @@ const PriceOptions = () => {
 
 
         <div>
-            <h1>Price Option:</h1>
+            <h1 className="text-4xl font-semibold text-white text-center">Price Option of my gym</h1>
+            <div className=" grid md:grid-cols-3 gap-9 m-8">
             {
                 PriceData.map(item => <PriceOption
                     key={item.id}
@@ -90,6 +91,7 @@ const PriceOptions = () => {
                     
                     </PriceOption>)
             }
+           </div>
             
         </div>
     );
