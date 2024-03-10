@@ -18,8 +18,10 @@ function App() {
      
       <Navbars></Navbars>
       <PriceOptions></PriceOptions>
+      <div className='flex justify-between'>
       <LineChart></LineChart>
       <BarGraph></BarGraph>
+      </div>
       
      
       

@@ -18,9 +18,9 @@ const BarGraph = () => {
     
     return (
         <div>
-            <p>I am </p>
+            <h1 className='text-2xl text-center mb-3 font-semibold text-white underline'>Here is the graph of my BarChart</h1>
           
-            <BarChart width={730} height={250} data={townTemperature}>
+            <BarChart width={730} height={500} data={townTemperature}>
   {/* <CartesianGrid strokeDasharray="3 3" /> */}
   <XAxis dataKey="town" />
                 <YAxis />
